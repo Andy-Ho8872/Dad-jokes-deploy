@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/Jokes", {data:[{}],fetch:[],mutations:[]});
