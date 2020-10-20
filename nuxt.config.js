@@ -4,7 +4,7 @@ import colors from 'vuetify/es5/util/colors'
 const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES'
   ? {
       router: {
-        base: '/Dad-jokes-deploy'
+        base: '/Dad-jokes-deploy/'
       }
     }
   : {}
@@ -75,6 +75,6 @@ export default {
   target: 'static',
   router: {
     // The path of all assets will use 'base' as prefix
-    base: '/Dad-jokes-deploy'// repo name
+    base: '/Dad-jokes-deploy/' // repo name
   }, 
 }
