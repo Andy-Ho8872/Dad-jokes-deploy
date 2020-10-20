@@ -10,6 +10,8 @@ const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES'
   : {}
 
 export default {
+  ...routerBase, // to export routerbase
+  
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
     titleTemplate: '%s - Dad Joke',
@@ -75,5 +77,4 @@ export default {
     // The path of all assets will use 'base' as prefix
     base: '/Dad-jokes-deploy'// repo name
   }, 
-  ...routerBase // to export routerbase (optional delete if doesnt't work)
 }
