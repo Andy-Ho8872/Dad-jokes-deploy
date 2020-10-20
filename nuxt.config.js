@@ -66,6 +66,7 @@ export default {
     // The path of all assets will use 'base' as prefix
     base: '/Dad-jokes-deploy'// repo name
   }, 
+  ...routerBase // to export routerbase (optional delete if doesnt't work)
 }
 // to check condition if contains <repo-name> for running `npm run dev`
 const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES'
@@ -75,5 +76,5 @@ const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES'
       }
     }
   : {}
-routerBase
+// routerBase
 //}
