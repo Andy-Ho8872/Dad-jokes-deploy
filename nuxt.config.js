@@ -60,20 +60,20 @@ export default {
   build: {
   },
 
-// deployment to github
-  target: 'static',
-  router: {
-    // The path of all assets will use 'base' as prefix
-    base: '/Dad-jokes-deploy'// repo name
-  }, 
+// // deployment to github
+//   target: 'static',
+//   router: {
+//     // The path of all assets will use 'base' as prefix
+//     base: '/Dad-jokes-deploy'// repo name
+//   }, 
+// }
+// // to check condition if contains <repo-name> for running `npm run dev`
+// const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES'
+//   ? {
+//       router: {
+//         base: '/Dad-jokes-deploy'
+//       }
+//     }
+//   : {}
+// routerBase
 }
-// to check condition if contains <repo-name> for running `npm run dev`
-const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES'
-  ? {
-      router: {
-        base: '/Dad-jokes-deploy'
-      }
-    }
-  : {}
-routerBase
-//
