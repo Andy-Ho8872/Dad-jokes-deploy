@@ -1,5 +1,14 @@
 import colors from 'vuetify/es5/util/colors'
 
+// to check condition if contains <repo-name> for running `npm run dev`
+const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES'
+  ? {
+      router: {
+        base: '/Dad-jokes-deploy'
+      }
+    }
+  : {}
+
 export default {
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
@@ -68,13 +77,3 @@ export default {
   }, 
   ...routerBase // to export routerbase (optional delete if doesnt't work)
 }
-// to check condition if contains <repo-name> for running `npm run dev`
-const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES'
-  ? {
-      router: {
-        base: '/Dad-jokes-deploy'
-      }
-    }
-  : {}
-// routerBase
-//}
